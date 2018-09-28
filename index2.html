@@ -9,7 +9,15 @@
       <img src="logodoffi2.png" align="center"> 
        <div align="center"> inserisci i tuoi dati per essere contattato su OFFI </div>
             
-    <form action="jonnyrimo.github.io/index3.html" name="myForm" onsubmit="return(validate());">
+    <form action="jonnyrimo.github.io/index3.html" name="myForm" onsubmit="return(validate());"  <script>
+            var nome=document.modulo.nome.value;
+               
+               if (nome==""){
+                  alert("il campo nome è obbligatorio");
+                 //document.modulo.nome.focus();
+                  //return false;
+               }
+            </script>>
          <table cellspacing="2" cellpadding="2" border="0" align="center">
             
             <tr>
@@ -46,15 +54,7 @@
             </tr>
             
          </table>
-            <script>
-            var nome=document.modulo.nome.value;
-               
-               if (nome==""){
-                  alert("il campo nome è obbligatorio");
-                 //document.modulo.nome.focus();
-                  //return false;
-               }
-            </script>
+           
       </form>
        </body>
 </html>
