@@ -1,13 +1,22 @@
 <html>
 <body>
   <script>
-   //var soldi=prompt("Quanto vorresti spendere per una casa domotica?", 2000);
-   var soldi="ciao"
-  </script>
+   var soldi=prompt("Quanto vorresti spendere per una casa domotica?", 2000);
   
-  <b> "soldi"+OFFI </b>
-<!--benvenuto in Doffi
-<img src="grazie.png">-->
+    
+    if(soldi<25){
+      alert("Offi costa poco piu di come ci hai detto, 25 Euro. Guarda comunque i dettagli del nostro prodotto!");
+    }
+    
+    if(soldi==25){
+       alert("Lo sai che Offi esattamente come tu ci hai detto?,  25 Euro" );
+    }
+    
+    if (soldi>25){
+       alert("Lo sai che Offi costa meno di come tu ci hai detto?, " soldi "Euro" );
+    }
+   
+  
   
 </body>
 </html>
